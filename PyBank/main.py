@@ -5,7 +5,7 @@ import csv
 # Set path for file
 csvpath = os.path.join("/Users/nicksullivan/Desktop/python-challenge/PyBank/Resources/budget_data.csv")
 
-# Lists to store data
+# Create lists to store data
 month_list = []
 profitloss_list = []
 
@@ -54,11 +54,6 @@ with open("financial_analysis.txt", "w") as text_file:
     print("Average Change: $" + str(average_profitloss), file = text_file)
     print("Greatest Increase in Profits: " + greatest_increase_month + " ($" + str(greatest_increase) + ")", file = text_file)
     print("Greatest Decrease in Profits: " + greatest_decrease_month + " ($" + str(greatest_decrease) + ")", file = text_file)
+
+# Move .txt file into Analysis folder
     os.replace("/Users/nicksullivan/Desktop/python-challenge/financial_analysis.txt", "/Users/nicksullivan/Desktop/python-challenge/PyBank/Analysis/financial_analysis.txt")
-
-
-        
-
-
-
-
